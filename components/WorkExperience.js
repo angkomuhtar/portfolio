@@ -8,11 +8,11 @@ export const WorkExperience = () => {
       id: 1,
       company: "CV. Avila Media Karya",
       location: "Makassar, Indonesia",
-      time: "Jan - Oct 2021",
+      time: "Mar 2020 - Oct 2021",
       job: "Frontend Developer",
       desc: [
         "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam at error itaque beatae rem esse id sunt autem nihil, iure veniam, explicabo ducimus necessitatibus officiis eligendi tempore ipsum architecto repellat!",
+        "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, ReactJs, NextJs, Flutter, Redux",
       ],
       tech: ["ReactJs", "Tailwindcss", "Laravel"],
     },
@@ -23,10 +23,10 @@ export const WorkExperience = () => {
       time: "Dec 2019 - Mar 2021",
       job: "Admin Technical Support",
       desc: [
-        "collect and process Telkomsel provider customer data from the database into a report for the purpose of increasing sales",
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam at error itaque beatae rem esse id sunt autem nihil, iure veniam, explicabo ducimus necessitatibus officiis eligendi tempore ipsum architecto repellat!",
+        "Collect and process Telkomsel provider customer data from the database into a report for the purpose of increasing sales",
+        "Build and maintenance sales website for branch",
       ],
-      tech: [],
+      tech: ["Apache Hadoop", "Bootstrap", "Laravel", "Mysql"],
     },
     {
       id: 3,
@@ -34,10 +34,7 @@ export const WorkExperience = () => {
       location: "Makassar, Indonesia",
       time: "Jun 2020 - Dec 2020",
       job: "React Native Developer",
-      desc: [
-        "Build a Online Food Reservation Mobile Apps Using React Native",
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam at error itaque beatae rem esse id sunt autem nihil, iure veniam, explicabo ducimus necessitatibus officiis eligendi tempore ipsum architecto repellat!",
-      ],
+      desc: ["Build a Online Food Reservation Mobile Apps Using React Native"],
       tech: ["React Native"],
     },
     {
@@ -47,10 +44,9 @@ export const WorkExperience = () => {
       time: "Apr 2018 - Sep 2019",
       job: "Fullstack Web Developer",
       desc: [
-        "build and maintain web monitoring and calculation of employee performance allowances within the government of Jeneponto ",
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam at error itaque beatae rem esse id sunt autem nihil, iure veniam, explicabo ducimus necessitatibus officiis eligendi tempore ipsum architecto repellat!",
+        "Build and maintain web monitoring and calculation of employee performance allowances within the government of Jeneponto ",
       ],
-      tech: ["PHP", "HTML", "CSS", "Laravel"],
+      tech: ["PHP", "HTML", "CSS", "Laravel", "Mysql", "Bootstrap"],
     },
     {
       id: 5,
@@ -59,10 +55,9 @@ export const WorkExperience = () => {
       time: "Mar 2016 - Aug 2017",
       job: "Fullstack Web Developer",
       desc: [
-        "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam at error itaque beatae rem esse id sunt autem nihil, iure veniam, explicabo ducimus necessitatibus officiis eligendi tempore ipsum architecto repellat!",
+        "Build and monitoring website for intern company uses like a payroll, sales on branch, accounting, etc",
       ],
-      tech: ["PHP", "HTML", "CSS", "Laravel"],
+      tech: ["PHP", "HTML", "CSS", "Laravel", "Mysql", "Bootstrap"],
     },
   ];
   const [selected, setSelected] = useState(0);
