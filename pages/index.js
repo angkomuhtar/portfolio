@@ -42,7 +42,7 @@ export default function Home() {
         <h1 className="font-Asap text-[66px] font-extrabold leading-none text-main-200">
           I build the web and mobile apps.
         </h1>
-        <p className="mt-5 max-w-xl text-md font-thin font-Fira leading-relaxed text-main-100">
+        <p className="mt-5 max-w-xl text-md font-thin font-Fira leading-loose text-main-100">
           I’m a software engineer specializing in building User Interface (UI)
           for the website (HTML, CSS, ReactJs) and apps (React Native, Flutter).
         </p>
