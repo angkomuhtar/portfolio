@@ -70,7 +70,7 @@ export const About = () => {
             height="25.3684"
             rx="3"
             stroke="currentcolor"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <rect
             x="4.50879"
@@ -79,7 +79,7 @@ export const About = () => {
             height="10.6316"
             rx="3"
             stroke="currentcolor"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
 
