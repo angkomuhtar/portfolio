@@ -63,8 +63,8 @@ export const WorkExperience = () => {
   const [selected, setSelected] = useState(0);
   const [target, setTarget] = useState(1);
   return (
-    <div>
-      <div className="mx-auto max-w-4xl py-28">
+    <div id="exp" className="min-h-screen pt-32">
+      <div className="mx-auto max-w-4xl">
         <style jsx>{`
           #indicator {
             top: ${selected * 56}px;
@@ -111,8 +111,8 @@ export const WorkExperience = () => {
             Work Experience
           </h1>
         </div>
-        <div className="my-12 flex space-x-3 items-start">
-          <div className="relative flex flex-col items-start border-l border-main-500">
+        <div className="my-12 flex space-x-3 items-start h-[70vh] overflow-y-hidden">
+          <div className="flex flex-col items-start border-l border-main-500 relative">
             <div
               id="indicator"
               className={`absolute -left-[1px] h-[56px] w-[2px] bg-main-200 transition-all duration-300`}
@@ -125,19 +125,22 @@ export const WorkExperience = () => {
                 }`}
                 onClick={() => {
                   setSelected(index);
+                  const el = document.querySelector(".exp");
+                  const det = document.querySelectorAll(".exp-detail");
+                  const height = det[0].clientHeight;
+                  el.style.transform = "translateY(" + -height * index + "px)";
+                  console.log(index * -height);
                 }}
               >
                 {data.company}
               </button>
             ))}
           </div>
-          <div className="flex-1">
+          <div className="flex-1 h-full exp  transition-all duration-300">
             {work.map((data, index) => (
               <div
                 key={index}
-                className={`p-6 text-main-200 font-redhat transition-all duration-200 ${
-                  selected == index ? "visible" : "hidden"
-                }`}
+                className="exp-detail p-6 text-main-200 font-redhat h-full"
               >
                 <h1 className="font-Asap text-xl mb-2"> {data.job} </h1>
                 <p className="font-Fira text-sm text-main-400 mb-6">

@@ -4,6 +4,29 @@
 
 @import "aos/dist/aos.css";
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-main-700;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-main-500 rounded-md;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-main-400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-main-700 font-redhat;
 }
