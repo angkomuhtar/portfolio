@@ -37,20 +37,24 @@ export const Navbar = () => {
                   </Link>
                 </li>
               </ul>
-              <button
+              <a
+                href="mailto:angkomuhtar@gmail.com"
+                // target="_blank"
                 className=" py-2 px-4 text-main-200 font-semibold"
                 data-aos="fade-left"
                 data-aos-delay="550"
               >
                 angkomuhtar@gmail.com
-              </button>
-              <button
+              </a>
+              <a
+                href="/Mushawiruddin_Muhtar(Resume).PDF"
+                download
                 className="rounded-sm border border-main-200 py-2 px-4 text-main-200 font-semibold"
                 data-aos="fade-left"
                 data-aos-delay="650"
               >
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>

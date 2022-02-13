@@ -1,13 +1,95 @@
 import React from "react";
 
 const Project = () => {
+  const proj = [
+    {
+      title: "FIA Apps",
+      type: "Android & IoS Apps",
+      client: "Female In Actions",
+      Desc: "",
+      Stack: ["React Native", "FireBase"],
+    },
+    {
+      title: "BJB DIGI",
+      type: "Website",
+      client: "",
+      Desc: "",
+      Stack: ["Bootstrap", "HTML", "PHP", "Javascript", "CSS"],
+    },
+    {
+      title: "SIPEKERJA",
+      type: "Website",
+      client: "BKPSDM JENEPONTO",
+      Desc: "",
+      Stack: ["Laravel", "Bootstrap", "Javascript"],
+    },
+    {
+      title: "Manre Apps",
+      type: "Android & Ios Apps",
+      client: "Manre Next Ekspresi",
+      Desc: "",
+      Stack: ["React Native", "Redux", "API"],
+    },
+    {
+      title: "STIEB Insan Madani Mandar",
+      type: "Website",
+      client: "STIEB Insan Madani Mandar",
+      Desc: "",
+      Stack: ["Next JS", "Redux", "API", "ExpressJs", "MYSQL"],
+    },
+    {
+      title: "BBPP BatangKaluku",
+      type: "Website",
+      client: "BBPP BatangKaluku",
+      Desc: "",
+      Stack: ["Laravel", "Tailwindcss", "MYSQL"],
+    },
+    {
+      title: "Pmacar.com",
+      type: "Website",
+      client: "Pmancar",
+      Desc: "",
+      Stack: ["Laravel", "Tailwindcss", "MYSQL"],
+    },
+    // {
+    //   title: "FIA EXPERT",
+    //   type: "Android & IoS Apps",
+    //   client: "Female In Actions",
+    //   Desc: "",
+    //   Stack: ["React Native", "FireBase"],
+    // },
+    // {
+    //   title: "The Kurir",
+    //   type: "Android Apps",
+    //   client: "Female In Actions",
+    //   Desc: "",
+    //   Stack: ["Flutter", "Lumen", "API"],
+    // },
+    // {
+    //   title: "HaloSulawesi.com",
+    //   type: "Website",
+    //   client: "Prime Segment PAMASUKA TELKOMSEL",
+    //   Desc: "",
+    //   Stack: ["Laravel", "MYSQL", "Bootstrap", "ReactJs"],
+    // },
+    // {
+    //   title: "HaloBorneo.com",
+    //   type: "Website",
+    //   client: "Prime Segment PAMASUKA TELKOMSEL",
+    //   Desc: "",
+    //   Stack: ["Laravel", "MYSQL", "Bootstrap", "ReactJs"],
+    // },
+  ];
   return (
     <div
       id="project"
-      className="min-h-screen flex flex-col justify-center pt-28"
+      className="min-h-screen flex flex-col justify-center pt-28 pb-20"
     >
-      <div className="grid grid-cols-2 gap-8">
-        <div className="col-span-2 flex w-full items-center space-x-5">
+      <div className="grid grid-cols-2 grid-rows-4 gap-14 gap-y-20">
+        <div
+          className="flex w-full items-center space-x-5 mb-14"
+          data-aos="fade-right"
+        >
           <svg
             className="h-10 w-10 text-main-200"
             viewBox="0 0 48 44"
@@ -48,8 +130,31 @@ const Project = () => {
             Projects
           </h1>
         </div>
-        <div className="bg-white h-40"></div>
-        <div className="bg-white h-40"></div>
+        {proj.map((proj, index) => (
+          <div
+            className="bg-white row-span-2 rounded-md"
+            data-aos="fade-up"
+            // data-aos-offset="300"
+            // data-aos-anchor-placement="bottom-top"
+            key={index}
+          >
+            <img
+              src="/project.jpg"
+              alt=""
+              className="rounded-t-md aspect-video object-cover"
+            />
+            <div className="bg-main-50 p-8 rounded-md">
+              <h1 className="text-2xl font-bold">{proj.title}</h1>
+              <p className="my-4 font-Redrose leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                tenetur magni laudantium quas sapiente sed aut hic atque
+                incidunt. Molestias maxime nemo excepturi exercitationem iste?
+                Tempora assumenda praesentium placeat eum.
+              </p>
+              <p className="font-Fira text-sm">{proj.Stack.join(", ")} </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
